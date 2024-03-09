@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import { Props } from "../typings";
+import { Props } from '../typings'
 
 export const Overlay = styled.div<Props>`
   background-color: rgba(128, 128, 128, 0.3);
@@ -9,5 +9,5 @@ export const Overlay = styled.div<Props>`
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  display: ${({ open }) => (open ? "block" : "none")};
-`;
+  display: ${({ open }) => (open ? 'block' : 'none')};
+`

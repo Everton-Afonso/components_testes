@@ -1,14 +1,14 @@
-import { Props } from "../typings";
-import IconClose from "./IconClose";
+import { Props } from '../typings'
+import IconClose from './IconClose'
 
-import * as S from "./styles";
+import * as S from './styles'
 
 export const Wrapper = ({
   open,
   close,
   openingPosition,
   children,
-  titleWrapper,
+  titleWrapper
 }: Props) => {
   return (
     <S.OpenWrapper open={open} openingPosition={openingPosition}>
@@ -22,5 +22,5 @@ export const Wrapper = ({
 
       {children}
     </S.OpenWrapper>
-  );
-};
+  )
+}

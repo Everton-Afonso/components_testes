@@ -1,23 +1,23 @@
-import { useState } from "react";
+import { useState } from 'react'
 
-import { DrawerProps } from "./components/typings";
-import { Wrapper } from "./components/Wrapper";
-import { OverlayDrawer } from "./components/Overlay";
-import IconDrawerDefaulte from "./components/IconDrawerDefaulte";
+import { DrawerProps } from './components/typings'
+import { Wrapper } from './components/Wrapper'
+import { OverlayDrawer } from './components/Overlay'
+import IconDrawerDefaulte from './components/IconDrawerDefaulte'
 
-import * as S from "./styles";
+import * as S from './styles'
 
 const Drawer = ({
   children,
   openingPosition,
   iconDrawer,
-  titleWrapper,
+  titleWrapper
 }: DrawerProps) => {
-  const [isOpenDrawer, setIsOpenDrawer] = useState<boolean>(false);
+  const [isOpenDrawer, setIsOpenDrawer] = useState<boolean>(false)
 
   const handlerCloseDrawer = () => {
-    setIsOpenDrawer(!isOpenDrawer);
-  };
+    setIsOpenDrawer(!isOpenDrawer)
+  }
 
   return (
     <>
@@ -36,7 +36,7 @@ const Drawer = ({
         {children}
       </Wrapper>
     </>
-  );
-};
+  )
+}
 
-export default Drawer;
+export default Drawer
