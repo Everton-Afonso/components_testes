@@ -49,6 +49,8 @@ export default {
     gray: '#8F8F8F',
     darkGray: '#2E2F42',
     danger: '#ff0060',
-    red: '#FF6347'
+    red: '#FF6347',
+    green: '#68bb79',
+    grey: '#b7b7b7'
   }
 } as const
